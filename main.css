@@ -1,0 +1,222 @@
+      /* colors palettes https://www.canva.com/learn/100-color-combinations/ 
+ */
+      
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+      
+      body {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+          color: black;
+          background: white;
+          text-align: left;
+          line-height: 1.5;
+      }
+      
+      h1 {
+          font-size: 26px;
+          color: #E4A3F4;
+          text-shadow: 1px 1px black;
+          text-align: center;
+      }
+      
+      h2 {
+          color: #A3F4E4;
+          text-shadow: 1px 1px #ff0000;
+      }
+      
+      footer {
+          padding: 1% 0;
+          font-family: 'Open Sans', sans-serif;
+      }
+      /* NAV BAR STYLES */
+      
+      nav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 20%;
+          background-color: white;
+          height: 100%;
+          /* Full height */
+          position: fixed;
+          /* Make it stick, even on scroll */
+      }
+      
+      .menu {
+          position: block;
+          width: 100%;
+          height: 30px;
+          background: #F4E4A3;
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 36px;
+          font-style: bold;
+          text-align: center;
+      }
+      
+      .circle {
+          margin: 10px;
+          position: relative;
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          background: #A3F4E4;
+      }
+      
+      .triangle {
+          margin: 70px;
+          width: 0;
+          height: 0;
+          border-top: 100px solid transparent;
+          border-left: 200px solid #F4E4A3;
+          border-bottom: 100px solid transparent;
+      }
+      
+      .rectangle {
+          width: 100px;
+          height: 200px;
+          background: #A3F4E4;
+      }
+      
+      .nav-links {
+          text-decoration: none;
+          color: #E4A3F4;
+          padding: 30px 0;
+      }
+      
+      .nav-links:hover {
+          font-weight: bold;
+      }
+      /* MAIN  STYLES */
+      
+      main {
+          margin-left: 20%;
+          padding: 20px;
+      }
+      
+      section {
+          padding: 20px;
+      }
+      /* HERO  STYLES */
+      
+      .image-crop {
+          width: 300px;
+          height: 300px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin: 0 auto;
+      }
+      
+      .profile-pic {
+          height: 100%;
+          width: auto;
+      }
+      /* SECTION STYLES */
+      
+      .bio {
+          min-height: 200px;
+          padding: 6% 0;
+      }
+      
+      .contact {
+          min-height: 200px;
+          padding: 6% 0;
+      }
+      
+      .icon {
+          max-width: 72px;
+          max-height: 76px;
+          padding: 10px;
+      }
+      /* SEPARATOR  STYLES */
+      
+      hr {
+          border: 0;
+          height: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      /* PROJECT CARD  STYLES */
+      
+      .cardContainer {
+          height: 320px;
+      }
+      
+      .cardText {
+          font-size: 8px;
+      }
+      
+      .quizCard {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          transition: 0.3s;
+          height: 320px;
+          width: 320px;
+      }
+      /* On mouse-over, add a deeper shadow */
+      
+      .quizCard:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          transform: scale(1.1);
+      }
+      /* Add some padding inside the card container */
+      
+      .cardDetails {
+          padding: 2px 10px;
+      }
+      /* MEDIA QUERIES */
+      
+      @media all and (max-width: 1690px) {}
+      
+      @media all and (max-width: 1280px) {
+          .hamburger {}
+      }
+      
+      @media only screen and (min-width: 320px) and (max-width: 768px) {
+          .image-crop {
+              width: 150px;
+              height: 150px;
+              overflow: hidden;
+              border-radius: 50%;
+              margin: 5px auto;
+          }
+          .profile-pic {
+              height: 100%;
+              width: auto;
+          }
+          h1,
+          .navbar,
+          a {
+              text-align: center;
+              font-size: 16px;
+          }
+          h2 {
+              font-size: 16px;
+              text-align: left;
+              padding: 10px 0;
+          }
+          body {
+              font-family: 'Raleway', sans-serif;
+              font-size: 12px;
+              color: black;
+              background: white;
+              text-align: left;
+              line-height: 1.25;
+          }
+          nav {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              background-color: white;
+              width: 20%;
+              /* Full height */
+              position: fixed;
+              /* Make it stick, even on scroll */
+              overflow: auto;
+              /* Enable scrolling if the sidenav has too much content */
+          }
+      }
