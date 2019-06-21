@@ -15,20 +15,26 @@
     <!-- I N S P I R A T I O N https://hellomichael.com/ -->
     <!-- Nav Bar w/links to anchor sections -->
     <nav class='navbar'>
-        <div class='hamburger' id='hamburgerIcon'>
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <div class='menu' id='js-menu'>
-            <ul>
-                <li><a href='#Profile' class='nav-links'>Profile</a></li>
-                <li><a href='#Projects' class='nav-links'>Projects</a></li>
-                <li><a href='#Contact' class='nav-links'>Contact</a></li>
+        <div id='menuToggle'>
+            <input type='checkbox' />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id='menu'>
+                <a href='#Profile' class='nav-links'>
+                    <li>Profile</li>
+                </a>
+                <a href='#Projects' class='nav-links'>
+                    <li>Projects</li>
+                </a>
+                <a href='#Contact' class='nav-links'>
+                    <li>Contact</li>
+                </a>
+                <div class='circle'></div>
+                <div class='triangle'></div>
+                <div class='rectangle'></div>
+                <div class='square'></div>
             </ul>
-            <div class='circle'></div>
-            <div class='triangle'></div>
-            <div class='rectangle'></div>
         </div>
     </nav>
 
@@ -49,7 +55,7 @@
             <h2>Profile</h2>
             <p>I'm a recent graduate of the Full Stack Engineering bootcamp program at Thinkful. I come from a background in QA and Customer Support. As an engineer, I like to utilize this unique perspective while developing a product to create a functional,
                 yet clean experience for users.
-            </p>
+            </p><br>
             <p>Outside of coding, I’m often found hiking with my dog or booking a ticket to travel somewhere I haven't been before. I love a good fictional read and I’m obsessed with Chai Tea Lattes.</p>
         </section>
         <hr>
