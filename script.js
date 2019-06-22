@@ -1,1 +1,5 @@
-/* add javascript here */
+$('#menuToggle').click(function() {
+    $('#menuLinks').slideToggle("slow", function() {
+        // Animation complete.
+    });
+})
