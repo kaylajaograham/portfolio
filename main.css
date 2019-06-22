@@ -278,6 +278,7 @@
      }
      #menuLinks {
          background-color: #EDEDED;
+         position: fixed;
      }
      #menu li {
          padding: 10px 0;
