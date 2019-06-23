@@ -19,11 +19,13 @@
 <body>
     <!-- Nav Bar w/links to anchor sections -->
     <nav class='navbar'>
+        <!-- creation of hamburger w/divs -->
         <div id='menuToggle'>
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
+        <!-- creation of menu with anchored links-->
         <div id='menuLinks'>
             <ul id='menu'>
                 <a href='#Profile' class='nav-links'>
@@ -42,9 +44,10 @@
         </div>
     </nav>
 
-    <!-- Hero Image and Headline, should be taking up the fold -->
+    <!-- Hero image + sections -->
     <main role='main'>
         <header class='hero'>
+            <!-- creates a rounded image -->
             <div class='image-crop'>
                 <img src='https://pbs.twimg.com/profile_images/1017893616788766720/R6Hhb2oB.jpg' alt='profile picture' class='profile-pic'>
             </div>
@@ -60,7 +63,8 @@
             <p>I'm a recent graduate of the Full Stack Engineering bootcamp program at Thinkful. I come from a background in QA and Customer Support. As an engineer, I like to utilize this unique perspective while developing a product to create a functional,
                 yet clean experience for users.
             </p><br>
-            <p>Outside of coding, I’m often found hiking with my dog or booking a ticket to travel somewhere I haven't been before. I love a good fictional read and I’m obsessed with Chai Tea Lattes.</p>
+            <p>Outside of coding, I’m often found hiking with my dog or planning my next travel destination. I love a good fictional read and I’m obsessed with chai tea lattes. I look to coding to express my creativity and to create new things from nothing.
+                I'm excited to grow as an engineer and work alongside other badass individuals in the space.</p>
         </section>
         <hr>
 
@@ -68,7 +72,8 @@
         <section class='contact'>
             <a name='Contact'></a>
             <h2>Contact</h2>
-            <p>I'd love to hear from you! Let's connect and talk code.</p>
+            <p>I'd love to hear from you! Let's connect and talk code. Or we can just swap dog photos - that works too.</p>
+            <!-- Clickable icons for email, github, and linkedin -->
             <div class='contactIcons'>
                 <a href='mailto: kaylajaograham@gmail.com'><img src='https://img.icons8.com/color/48/000000/gmail.png' alt='Gmail Logo' class='icon'></a>
                 <a href='https://www.linkedin.com/in/kaylajaograham'><img src='http://www.freelogovectors.net/wp-content/uploads/2018/08/Linkedin_Logo.png' alt='LinkedIn logo' class='icon'></a>
@@ -81,12 +86,15 @@
         <section class='projects'>
             <h2>Projects</h2>
             <a name='Projects'></a>
+            <!-- entire project container-->
             <div class='quizCard'>
                 <img src='quizapp.png' alt='quizAppAvatar' class='quizAppPhoto' style='width:100%'>
+                <!-- details for project container-->
                 <div class='cardDetails'>
                     <h4><b>Quiz App</b></h4>
                     <p class='cardText'>Powered by HTML, CSS, JavaScript and jQuery, the quiz app is a fun game that brings participants through a series of questions and generates feedback upon selection and completion.</p>
                 </div>
+                <!-- clickables within project container for repo and demo -->
                 <button type='button'><a href='https://github.com/kaylajaograham/thinkfulquizapp'>Code</a></button>
                 <button type='button'><a href='https://kaylajaograham.github.io/thinkfulquizapp/'>Demo</a></button>
             </div>
@@ -100,7 +108,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js "></script>
 
     <!-- script for javascript -->
-    <script src="script.js "></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
