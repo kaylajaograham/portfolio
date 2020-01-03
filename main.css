@@ -3,148 +3,114 @@
      margin: 0;
      padding: 0;
  }
- 
- body {
-     font-family: 'Montserrat', sans-serif;
-     font-size: 20px;
-     color: black;
-     background: white;
-     text-align: left;
-     line-height: 1.5;
-     background: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Background-Images-2.png');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
- }
- 
- h1 {
-     font-size: 26px;
-     color: #E4A3F4;
-     text-shadow: 1px 1px gray;
-     text-align: center;
- }
- 
- h2 {
-     color: #A3F4E4;
-     text-shadow: 1px 1px red;
- }
- 
- footer {
-     padding: 1% 0;
-     font-family: 'Open Sans', sans-serif;
-     font-size: 10px;
-     text-align: right;
- }
+
+
+ @media only screen and (min-width: 325px) {
+    /* phones */    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: black;
+        text-align: left;
+        line-height: 1.5;
+        background: url('https://thumbs.dreamstime.com/b/green-white-translucent-gemstone-surface-jade-texture-marble-agate-semiprecious-malachite-geode-131143559.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    h1 {
+        font-size: 32px;
+        color: #072f37;
+        text-shadow: 1px 1px whitesmoke;
+        text-align: center;
+    }
+    
+    h2 {
+        color: #334f3b;
+        text-shadow: 1px 1px whitesmoke;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px 0;
+
+    }
+    .aboutTitle, .projectsTitle {
+        font-size: 22px;
+        text-align: left;
+        padding: 40px 15px;
+        color: #bd7423;
+        text-shadow: 1px 1px #c8cbbf;
+    }
+
+    
+    footer {
+        padding: 1% 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        text-align: right;
+    }
+
+
+    a {
+        text-align: center;
+        list-style: none;
+        font-size: 16px;
+    }
+
+
+}
+
  /* ----- NAV BAR STYLES -------- */
  
- nav {
-     position: relative;
-     background: #EDEDED;
-     width: 15%;
+ #menuLinks {
+     position: inline-block;
+     background: #334f3b;
+     width: 100%;
      font-family: 'Montserrat', sans-serif;
      font-size: 36px;
      font-style: bold;
      text-align: center;
- }
- /* HAMBURGER ICON */
- 
- #menuToggle {
      position: fixed;
-     top: 30px;
-     left: 30px;
+     opacity: 85%;
      z-index: 1;
-     -webkit-user-select: none;
-     user-select: none;
-     cursor: pointer;
- }
- 
- .bar1,
- .bar2,
- .bar3 {
-     display: block;
-     width: 33px;
-     height: 4px;
-     margin-bottom: 5px;
-     position: relative;
-     background: #E4A3F4;
-     border-radius: 3px;
-     z-index: 1;
- }
- /* Unordered List for clickables in menu */
- 
- #menu {
-     list-style-type: none;
-     position: fixed;
-     display: static;
-     padding-top: 50px;
-     width: 15%;
- }
- 
- #menu li {
-     padding: 10px 0;
-     font-size: 22px;
-     width: 220px;
+
  }
  
  .nav-links {
      text-decoration: none;
-     color: #E4A3F4;
-     padding: 30px 0;
+     color: #c8cbbf;
+     padding: 30px 20px;
+     display: inline-block;
  }
  
  .nav-links:hover {
      font-weight: bold;
-     color: #F4E4A3;
-     text-shadow: 1px 1px gray;
- }
- /* Fun little menu decor */
- 
- .circle {
-     margin: 10px;
-     position: relative;
-     width: 180px;
-     height: 180px;
-     border-radius: 50%;
-     background: #A3F4E4;
-     z-index: 1;
+     color: whitesmoke;
+     text-shadow: 1px 1px black;
  }
  
- .triangle {
-     margin: 70px;
-     width: 0;
-     height: 0;
-     border-top: 75px solid transparent;
-     border-left: 150px solid #F4E4A3;
-     border-bottom: 75px solid transparent;
-     z-index: 0;
- }
+ /* SEPARATOR  STYLES */
  
- .rectangle {
-     width: 100px;
-     height: 200px;
-     background: #A3F4E4;
-     z-index: 1;
- }
- /* MAIN  STYLES */
- 
- main {
-     margin-left: 20%;
-     padding: 10px;
-     z-index: 1;
- }
- 
- section {
-     padding: 10px;
- }
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #65816d;
+    border-bottom: 1px solid #334f3b;
+}
  /* HERO  STYLES */
  
+ .hero {
+     position: block;
+     padding-top: 200px;
+     padding-bottom: 200px;
+ }
  .image-crop {
      width: 300px;
      height: 300px;
      overflow: hidden;
      border-radius: 50%;
      margin: 0 auto;
-     border: 1px solid lightgray;
+     border: 5px solid #bd7423;
  }
  
  .profile-pic {
@@ -153,184 +119,226 @@
  }
  /* SECTION STYLES */
  
- .bio {
-     min-height: 200px;
-     padding: 6% 0;
+ .bio, .projects {
+     height: auto;
+     background-color: whitesmoke;
+     text-align: center;
+     opacity: 85%;
+ }
+
+ .aboutMe, .connecting {
+     text-align: left;
+     padding: 10px 10px 50px 10px;
+     font-size: 16px;
  }
  
  .contact {
-     min-height: 200px;
-     padding: 6% 0;
+     height: 400px;
+     padding: 50px 0;
+     text-align: center;
+
  }
+
+
+ .connecting {
+    text-align: center;
+    padding: 30px 5px;
+    font-size: 16px;
+    color: black;
+ }
+
+ .connectTitle {
+    font-size: 22px;
+    text-align: left;
+    padding: 0 5px 20px;
+    color: #072f37;
+    text-shadow: 1px 1px #c8cbbf;
+}
  
- .contact p,
  .contactIcons {
      text-align: center;
+    margin: 0 20px;
  }
  
  .icon {
      max-width: 72px;
      max-height: 76px;
-     padding: 10px;
+     padding: 15px;
  }
- /* SEPARATOR  STYLES */
- 
- hr {
-     border: 0;
-     height: 0;
-     border-top: 1px solid rgba(0, 0, 0, 0.1);
-     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
- }
+
  /* PROJECT CARD  STYLES */
+
+
+
+.porfolio-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.projectName {
+    color: #072f37;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 0 5px 0;
+}
+
+.portfolio-img {
+    height: 50px;
+    width: 50px;
+    
+}
+  .project-box, .project-box2, .project-box3 {
+    height: 350px;
+    width: 80%;
+    color: #000;
+    width: 100%;
+    border: 2px solid #334f3b;
+    margin-bottom: 20px;
+}
+
+.project-box {
+    background: url('./quizapp.png');
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center bottom; 
+}
+
+.project-box2 {
+    background: url('./pawprintPreview.png');
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center bottom; 
+}
+
+.projectDescription {
+      color: #000;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+
+    /* TABLET AND DESKTOP */
+    /* TABLET AND DESKTOP */
+        /* TABLET AND DESKTOP */
+            /* TABLET AND DESKTOP */
+                /* TABLET AND DESKTOP */
+                    /* TABLET AND DESKTOP */
+                        /* TABLET AND DESKTOP */
+                            /* TABLET AND DESKTOP */
+                                /* TABLET AND DESKTOP */
+                                    /* TABLET AND DESKTOP */
+                                        /* TABLET AND DESKTOP */
+                                            /* TABLET AND DESKTOP */
+                                                /* TABLET AND DESKTOP */
+
+ @media only screen and (min-width: 768px)  {
+    /* tablets and desktop */
+
+    main {
+        padding: 0 100px;
+    }
+    .aboutTitle, .projectsTitle, .connectTitle {
+        font-size: 22px;
+        text-align: left;
+        padding: 40px 30px;
+        color: #bd7423;
+        text-shadow: 1px 1px #c8cbbf;
+    }
+   
+    .connectTitle {
+       color: #072f37;
+       text-shadow: 1px 1px #c8cbbf;
+   }
+
+ /* PROJECT CARD  STYLES */
+
+
+.projects {
+   display: block;
+}
+
+
+.projectName {
+    color: #072f37;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 0 5px 0;
+}
+
+
+  .project-box, .project-box2, .project-box3 {
+    height: 350px;
+    color: #000;
+    border: 2px solid #334f3b;
+
+}
+
+
+.project-box {
+    background: url('./quizapp.png');
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center bottom; 
+}
+
+.project-box2 {
+    background: url('./pawprintPreview.png');
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center bottom; 
+}
+
+.projectDescription {
+      color: #000;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+
  
- .projects {
-     height: 500px;
- }
+   /* TABLET AND DESKTOP */
+    /* TABLET AND DESKTOP */
+        /* TABLET AND DESKTOP */
+            /* TABLET AND DESKTOP */
+                /* TABLET AND DESKTOP */
+                    /* TABLET AND DESKTOP */
+                        /* TABLET AND DESKTOP */
+                            /* TABLET AND DESKTOP */
+                                /* TABLET AND DESKTOP */
+                                    /* TABLET AND DESKTOP */
+                                        /* TABLET AND DESKTOP */
+                                            /* TABLET AND DESKTOP */
+                                                /* TABLET AND DESKTOP */
+
+ @media only screen and (min-width: 1100px)  {
+    /* tablets and desktop */
+  
+
+ /* PROJECT CARD  STYLES */
+
+
+.porfolio-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+
+  .project-box, .project-box2, .project-box3 {
+    width: 30%;
+}
+
+
+
  
- .projects a {
-     border: none;
-     height: 10px;
-     width: 15px;
-     padding: 5px 10px;
- }
+
  
- button {
-     position: center;
-     height: 25px;
- }
  
- .cardText {
-     font-size: 10px;
- }
- 
- .quizCard {
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     transition: 0.3s;
-     height: 380px;
-     width: 320px;
- }
- 
- .quizCard:hover {
-     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-     transform: scale(1.1);
- }
- 
- .cardDetails {
-     padding: 2px 10px;
- }
- /* MEDIA QUERIES */
- /* MEDIA QUERIES */
- /* MEDIA QUERIES */
- /* MEDIA QUERIES */
- /* MEDIA QUERIES */
- /* MEDIA QUERIES */
- /* MEDIA QUERIES */
- 
- @media only screen and (min-width: 320px) and (max-width: 768px) {
-     main {
-         margin-left: 0%;
-     }
-     .projects {
-         padding: 0px
-     }
-     #menuToggle {
-         display: block;
-         position: fixed;
-         top: 10px;
-         left: 10px;
-         z-index: 1;
-         -webkit-user-select: none;
-         user-select: none;
-         cursor: pointer;
-     }
-     #menu {
-         list-style-type: none;
-         display: block;
-         position: fixed;
-         background-color: #EFEEEE;
-         width: 100%;
-         height: 30%;
-         overflow: hidden;
-     }
-     #menuLinks {
-         font-weight: bold;
-         text-shadow: 1px 1px gray;
-         display: none;
-     }
-     #menu li {
-         font-size: 18px;
-         text-align: center;
-         color: #E4A3F4;
-         overflow: hidden;
-         margin: 0 auto;
-     }
-     .circle {
-         width: 0px;
-         height: 0px;
-     }
-     .triangle {
-         display: none;
-         width: 0px;
-         height: 0px;
-     }
-     .rectangle {
-         width: 0px;
-         height: 0px;
-     }
-     .image-crop {
-         width: 100px;
-         height: 100px;
-         overflow: hidden;
-         border-radius: 50%;
-         padding: 10px auto;
-     }
-     .profile-pic {
-         height: 100%;
-         width: auto;
-     }
-     h1,
-     .navbar,
-     a {
-         text-align: center;
-         font-size: 16px;
-     }
-     h2 {
-         color: #F4E4A3;
-         text-shadow: 1px 1px gray;
-         font-size: 16px;
-         text-align: center;
-         padding: 10px 0;
-     }
-     p {
-         font-size: 14px;
-         text-align: center;
-     }
-     .quizAppPhoto {
-         display: block;
-         height: 200px;
-         width: auto;
-         padding: 5px;
-     }
-     .quizCard {
-         padding: 5px;
-         margin: 0 auto;
-         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-         text-align: center;
-     }
-     .contact {
-         text-align: center;
-         padding: 5px;
-     }
-     .icon {
-         max-width: 52px;
-         max-height: 50px;
-     }
-     footer {
-         font-size: 8px;
-     }
-     .projects a {
-         height: 10px;
-         width: 15px;
-         padding: 5px 10px;
-     }
- }

@@ -19,20 +19,13 @@
 <body>
     <!-- Nav Bar w/links to anchor sections -->
     <nav class='navbar'>
-        <!-- creation of hamburger w/divs -->
-        <div id='menuToggle'>
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <!-- creation of menu with anchored links-->
         <div id='menuLinks'>
             <ul id='menu'>
                 <a href='#Profile' class='nav-links'>
-                    <li>Profile</li>
+                    <li>About</li>
                 </a>
                 <a href='#Contact' class='nav-links'>
-                    <li>Contact</li>
+                    <li>Connect</li>
                 </a>
                 <a href='#Projects' class='nav-links'>
                     <li>Projects</li>
@@ -52,55 +45,86 @@
                 <img src='https://pbs.twimg.com/profile_images/1017893616788766720/R6Hhb2oB.jpg' alt='profile picture' class='profile-pic'>
             </div>
             <h1>Kayla Graham</h1>
-            <h1>Full Stack Engineer from San Francisco</h1>
+            <h2>Full Stack Engineer from San Francisco</h2>
         </header>
         <hr>
 
         <!-- Profile and bio section -->
         <section class='bio'>
             <a name='Profile'></a>
-            <h2>Profile</h2>
-            <p>I'm a recent graduate of the Full Stack Engineering bootcamp program at Thinkful. I come from a background in QA and Customer Support. As an engineer, I like to utilize this unique perspective while developing a product to create a functional,
-                yet clean experience for users.
-            </p><br>
-            <p>Outside of coding, I’m often found hiking with my dog or planning my next travel destination. I love a good fictional read and I’m obsessed with chai tea lattes. I look to coding to express my creativity and to create new things from nothing.
-                I'm excited to grow as an engineer and work alongside other badass individuals in the space.</p>
+            <h3 class='aboutTitle'>About</h3>
+            <p class='aboutMe'>Why, hello! I'm a recent graduate of the Full Stack Engineering program at the Thinkful online bootcamp. My background includes Software QA and Customer Support. As an engineer, I aim to merge these perspectives while developing to create an appealing and intuitive experience for users.
+            <br>
+            <br>
+            Outside of coding, I’m often found hiking with my dog or sweating in my hot yoga classes. I love a good fictional read and I’m obsessed with chai tea lattes. Learning to code unlocked a way for me to express myself creativity.
+                I'm excited to grow as an engineer and learn all I can along the way.</p>
         </section>
         <hr>
 
         <!-- Contact section -->
         <section class='contact'>
             <a name='Contact'></a>
-            <h2>Contact</h2>
-            <p>I'd love to hear from you! Let's connect and talk code. Or we can just swap dog photos - that works too.</p>
-            <!-- Clickable icons for email, github, and linkedin -->
-            <div class='contactIcons'>
-                <a href='mailto: kaylajaograham@gmail.com'><img src='https://img.icons8.com/color/48/000000/gmail.png' alt='Gmail Logo' class='icon'></a>
-                <a href='https://www.linkedin.com/in/kaylajaograham'><img src='http://www.freelogovectors.net/wp-content/uploads/2018/08/Linkedin_Logo.png' alt='LinkedIn logo' class='icon'></a>
-                <a href='https://www.github.com/kaylajaograham'><img src='https://image.flaticon.com/icons/png/512/25/25231.png' alt='GitHub logo' class='icon'></a>
-            </div>
+            <div class="contactBox">
+                <h3 class='connectTitle'>Connect</h3>
+                <p class='connecting'>Let's talk code or we can swap dog photos. I'd love to connect with you!</p>
+                <!-- Clickable icons for email, github, and linkedin -->
+                <div class='contactIcons'>
+                    <a href='mailto: kaylajaograham@gmail.com'><img src='https://img.icons8.com/color/48/000000/gmail.png' alt='Gmail Logo' class='icon'></a>
+                    <a href='https://www.linkedin.com/in/kaylajaograham'><img src='http://www.freelogovectors.net/wp-content/uploads/2018/08/Linkedin_Logo.png' alt='LinkedIn logo' class='icon'></a>
+                    <a href='https://www.github.com/kaylajaograham'><img src='https://image.flaticon.com/icons/png/512/25/25231.png' alt='GitHub logo' class='icon'></a>
+                </div>
+        </div>
         </section>
         <hr>
 
         <!-- Projects section -->
         <section class='projects'>
-            <h2>Projects</h2>
             <a name='Projects'></a>
+            <h3 class='projectsTitle'>Projects</h3>
             <!-- entire project container-->
-            <div class='quizCard'>
-                <img src='quizapp.png' alt='quizAppAvatar' class='quizAppPhoto' style='width:100%'>
-                <!-- details for project container-->
-                <div class='cardDetails'>
-                    <h4><b>Quiz App</b></h4>
-                    <p class='cardText'>Powered by HTML, CSS, JavaScript and jQuery, the quiz app is a fun game that brings participants through a series of questions and generates feedback upon selection and completion.</p>
-                </div>
-                <!-- clickables within project container for repo and demo -->
-                <button type='button'><a href='https://github.com/kaylajaograham/thinkfulquizapp'>Code</a></button>
-                <button type='button'><a href='https://kaylajaograham.github.io/thinkfulquizapp/'>Demo</a></button>
+            <div class='porfolio-flex'>
+                    <div class='project-box'>
+                        <a href="https://kaylajaograham.github.io/thinkfulquizapp/", target="_blank")>
+                            <h4 class='projectName'>California Quiz App</h4>
+                        </a> 
+                        <p class='projectDescription'>HTML, CSS, Javascript and jQuery. Test your Californian knowledge.</p>                
+                        <a href='https://github.com/kaylajaograham/thinkfulquizapp'>Code</a>
+                    </div>
+
+                    <div class='project-box2'>
+                        <a href="https://pawprint-app.now.sh/", target="_blank")>
+                            <h4 class='projectName'>PawPrint</h4>
+                        </a> 
+                        <p class='projectDescription'>React, JSX, Node, PostgresSQL Javascript, and CSS. PawPrint is a tool for dog-friendly offices to help manage their furry visitors.</p>                
+                        <a href='https://github.com/cophaso/pawprint-app'>Code</a>
+                    </div>
+
+                    <div class='project-box3'>
+                        <a href="", target="_blank")>
+                            <h4 class='projectName'>Posy - Coming Soon</h4>
+                        </a> 
+                        <p class='projectDescription'>React, JSX, Node, PostgresSQL Javascript, and CSS. Posy is a daily diary app to help sort through thoughts and feelings.</p>                
+                        <a href='#'>Code</a>
+                    </div>
+
+                    <div class='project-box3'>
+                        <a href="", target="_blank")>
+                            <h4 class='projectName'></h4>
+                        </a> 
+                        <p class='projectDescription'>In thought development..</p>                
+                    </div>
+
+                    <div class='project-box3'>
+                        <a href="", target="_blank")>
+                            <h4 class='projectName'></h4>
+                        </a> 
+                        <p class='projectDescription'>In thought development..</p>                
+                    </div>
+
             </div>
         </section>
 
-        <footer role='footer'>Kayla Graham 2019&copy;</footer>
+        <footer role='footer'>Kayla Graham 2020&copy;</footer>
     </main>
 
 
