@@ -48,36 +48,34 @@
     }
 
 
-    li a {
-        text-align: center;
-        list-style: none;
-        font-size: 16px;
-    }
 
-
-}
 
  /* ----- NAV BAR STYLES -------- */
  
- #menuLinks {
-     position: inline-block;
+ 
+ .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
      background: #334f3b;
      width: 100%;
      font-family: 'Montserrat', sans-serif;
-     font-size: 36px;
+     font-size: 22px;
      font-style: bold;
      text-align: center;
      position: fixed;
      opacity: 85%;
-     z-index: 1;
-
+     z-index: 1000;
+     height: 100px;
+     list-style: none;
+    padding-top: 30px;
  }
  
- .nav-links {
+ .link {
      text-decoration: none;
      color: #c8cbbf;
-     padding: 30px 20px;
-     display: inline-block;
+     
+
  }
  
  .nav-links:hover {
@@ -116,7 +114,7 @@
  }
  /* SECTION STYLES */
  
- .bio, .projects {
+ .bio, .projects, .contact {
      height: auto;
      background-color: whitesmoke;
      text-align: center;
@@ -146,7 +144,7 @@
 
  .connectTitle {
     font-size: 22px;
-    text-align: left;
+    text-align: center;
     padding: 0 5px 20px;
     color: #072f37;
     text-shadow: 1px 1px #c8cbbf;
@@ -238,7 +236,7 @@
     main {
         padding: 0 100px;
     }
-    .aboutTitle, .projectsTitle, .connectTitle {
+    .aboutTitle, .projectsTitle {
         font-size: 22px;
         text-align: left;
         padding: 40px 30px;
@@ -249,6 +247,7 @@
     .connectTitle {
        color: #072f37;
        text-shadow: 1px 1px #c8cbbf;
+       text-align: center;
    }
 
  /* PROJECT CARD  STYLES */
@@ -285,6 +284,13 @@
 
 .project-box2 {
     background: url('./pawprintPreview.png');
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center bottom; 
+}
+
+.project-box3 {
+    background: url('./posy.png');
     background-repeat: no-repeat;
     background-size: 300px 200px;
     background-position: center bottom; 
